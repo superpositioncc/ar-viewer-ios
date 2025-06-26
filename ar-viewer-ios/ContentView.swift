@@ -1,24 +1,14 @@
-//
-//  ContentView.swift
-//  ar-viewer-ios
-//
-//  Created by Bram Bogaerts on 26/06/2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+	@Binding var nObjects: Int
+	
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        ARViewIndicator(nObjects: $nObjects)
+			.edgesIgnoringSafeArea(.all)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(nObjects: .constant(100))
 }

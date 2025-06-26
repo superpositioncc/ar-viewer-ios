@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Viewer Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      input[type="number"] {
+        width: 60px;
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      #qrcode {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      img {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>AR Viewer Example</h1>
+      <p>
+        Change the number of cubes in the scene:
+        <input type="number" id="nObjects" value="5" min="1" max="500" />
+      </p>
+      <p>Scan the QR code below to view the AR content.</p>
+      <div id="qrcode"></div>
+    </div>
+
+    <script>
+      const container = document.getElementById("qrcode");
+
+      // Function to generate the QR code
+      function generateQRCode() {
+        const nObjects = document.getElementById("nObjects").value;
+        const url = `https://ar-viewer.sprps.dev/?nObjects=${nObjects}`;
+
+        container.innerHTML = ""; // Clear previous QR code
+
+        const qrCode = new QRCode(document.getElementById("qrcode"), {
+          text: url,
+          width: 256,
+          height: 256,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.L,
+        });
+      }
+
+      // Generate QR code on page load
+      window.onload = generateQRCode;
+
+      // Regenerate QR code when the number of objects changes
+      document
+        .getElementById("nObjects")
+        .addEventListener("input", generateQRCode);
+    </script>
+  </body>
+</html>

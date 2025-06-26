@@ -10,19 +10,61 @@
 		25262B922E0D7837000C5822 /* ar_viewer_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25262B912E0D7837000C5822 /* ar_viewer_iosApp.swift */; };
 		25262B942E0D7837000C5822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25262B932E0D7837000C5822 /* ContentView.swift */; };
 		25262B962E0D7838000C5822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25262B952E0D7838000C5822 /* Assets.xcassets */; };
-		25262B992E0D7838000C5822 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25262B982E0D7838000C5822 /* Preview Assets.xcassets */; };
+		25262BA62E0D7866000C5822 /* ar_viewer_ios_app_clipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25262BA52E0D7866000C5822 /* ar_viewer_ios_app_clipApp.swift */; };
+		25262BB22E0D7867000C5822 /* ar-viewer-ios-app-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 25262BA32E0D7866000C5822 /* ar-viewer-ios-app-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25262BB72E0D788F000C5822 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25262B932E0D7837000C5822 /* ContentView.swift */; };
+		25262BB82E0D7893000C5822 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25262B952E0D7838000C5822 /* Assets.xcassets */; };
+		25EA1F322E0D7FC80024293F /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA1F312E0D7FC80024293F /* ARView.swift */; };
+		25EA1F332E0D7FC80024293F /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA1F312E0D7FC80024293F /* ARView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25262BB02E0D7867000C5822 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25262B862E0D7837000C5822 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25262BA22E0D7866000C5822;
+			remoteInfo = "ar-viewer-ios-app-clip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25262BB62E0D7867000C5822 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				25262BB22E0D7867000C5822 /* ar-viewer-ios-app-clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		25262B8E2E0D7837000C5822 /* ar-viewer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-viewer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25262B912E0D7837000C5822 /* ar_viewer_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ar_viewer_iosApp.swift; sourceTree = "<group>"; };
 		25262B932E0D7837000C5822 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		25262B952E0D7838000C5822 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25262B982E0D7838000C5822 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25262BA32E0D7866000C5822 /* ar-viewer-ios-app-clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ar-viewer-ios-app-clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25262BA52E0D7866000C5822 /* ar_viewer_ios_app_clipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ar_viewer_ios_app_clipApp.swift; sourceTree = "<group>"; };
+		25262BAE2E0D7867000C5822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25262BAF2E0D7867000C5822 /* ar_viewer_ios_app_clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ar_viewer_ios_app_clip.entitlements; sourceTree = "<group>"; };
+		25EA1F302E0D7F6D0024293F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		25EA1F312E0D7FC80024293F /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		25EA1F342E0D8C2C0024293F /* ar-viewer-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ar-viewer-ios.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		25262B8B2E0D7837000C5822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25262BA02E0D7866000C5822 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				25262B902E0D7837000C5822 /* ar-viewer-ios */,
+				25262BA42E0D7866000C5822 /* ar-viewer-ios-app-clip */,
 				25262B8F2E0D7837000C5822 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				25262B8E2E0D7837000C5822 /* ar-viewer-ios.app */,
+				25262BA32E0D7866000C5822 /* ar-viewer-ios-app-clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,20 +95,24 @@
 		25262B902E0D7837000C5822 /* ar-viewer-ios */ = {
 			isa = PBXGroup;
 			children = (
+				25EA1F342E0D8C2C0024293F /* ar-viewer-ios.entitlements */,
+				25EA1F302E0D7F6D0024293F /* Info.plist */,
 				25262B912E0D7837000C5822 /* ar_viewer_iosApp.swift */,
 				25262B932E0D7837000C5822 /* ContentView.swift */,
 				25262B952E0D7838000C5822 /* Assets.xcassets */,
-				25262B972E0D7838000C5822 /* Preview Content */,
+				25EA1F312E0D7FC80024293F /* ARView.swift */,
 			);
 			path = "ar-viewer-ios";
 			sourceTree = "<group>";
 		};
-		25262B972E0D7838000C5822 /* Preview Content */ = {
+		25262BA42E0D7866000C5822 /* ar-viewer-ios-app-clip */ = {
 			isa = PBXGroup;
 			children = (
-				25262B982E0D7838000C5822 /* Preview Assets.xcassets */,
+				25262BA52E0D7866000C5822 /* ar_viewer_ios_app_clipApp.swift */,
+				25262BAE2E0D7867000C5822 /* Info.plist */,
+				25262BAF2E0D7867000C5822 /* ar_viewer_ios_app_clip.entitlements */,
 			);
-			path = "Preview Content";
+			path = "ar-viewer-ios-app-clip";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +125,34 @@
 				25262B8A2E0D7837000C5822 /* Sources */,
 				25262B8B2E0D7837000C5822 /* Frameworks */,
 				25262B8C2E0D7837000C5822 /* Resources */,
+				25262BB62E0D7867000C5822 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25262BB12E0D7867000C5822 /* PBXTargetDependency */,
 			);
 			name = "ar-viewer-ios";
 			productName = "ar-viewer-ios";
 			productReference = 25262B8E2E0D7837000C5822 /* ar-viewer-ios.app */;
 			productType = "com.apple.product-type.application";
+		};
+		25262BA22E0D7866000C5822 /* ar-viewer-ios-app-clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25262BB32E0D7867000C5822 /* Build configuration list for PBXNativeTarget "ar-viewer-ios-app-clip" */;
+			buildPhases = (
+				25262B9F2E0D7866000C5822 /* Sources */,
+				25262BA02E0D7866000C5822 /* Frameworks */,
+				25262BA12E0D7866000C5822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ar-viewer-ios-app-clip";
+			productName = "ar-viewer-ios-app-clip";
+			productReference = 25262BA32E0D7866000C5822 /* ar-viewer-ios-app-clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +165,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					25262B8D2E0D7837000C5822 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					25262BA22E0D7866000C5822 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -116,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				25262B8D2E0D7837000C5822 /* ar-viewer-ios */,
+				25262BA22E0D7866000C5822 /* ar-viewer-ios-app-clip */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +196,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25262B992E0D7838000C5822 /* Preview Assets.xcassets in Resources */,
 				25262B962E0D7838000C5822 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25262BA12E0D7866000C5822 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25262BB82E0D7893000C5822 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,10 +217,29 @@
 			files = (
 				25262B942E0D7837000C5822 /* ContentView.swift in Sources */,
 				25262B922E0D7837000C5822 /* ar_viewer_iosApp.swift in Sources */,
+				25EA1F322E0D7FC80024293F /* ARView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25262B9F2E0D7866000C5822 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25262BB72E0D788F000C5822 /* ContentView.swift in Sources */,
+				25262BA62E0D7866000C5822 /* ar_viewer_ios_app_clipApp.swift in Sources */,
+				25EA1F332E0D7FC80024293F /* ARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25262BB12E0D7867000C5822 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25262BA22E0D7866000C5822 /* ar-viewer-ios-app-clip */;
+			targetProxy = 25262BB02E0D7867000C5822 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		25262B9A2E0D7838000C5822 /* Debug */ = {
@@ -267,19 +364,24 @@
 		25262B9D2E0D7838000C5822 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ar-viewer-ios/ar-viewer-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ar-viewer-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = GZ5M47VRK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ar-viewer-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Viewer";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera for AR to work.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +389,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.superposition.ar-viewer-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,19 +402,24 @@
 		25262B9E2E0D7838000C5822 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ar-viewer-ios/ar-viewer-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ar-viewer-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = GZ5M47VRK6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ar-viewer-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Viewer";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera for AR to work.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +427,84 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "cc.superposition.ar-viewer-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25262BB42E0D7867000C5822 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ar-viewer-ios-app-clip/ar_viewer_ios_app_clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = GZ5M47VRK6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ar-viewer-ios-app-clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Viewer";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera for AR to work.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cc.superposition.ar-viewer-ios.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25262BB52E0D7867000C5822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ar-viewer-ios-app-clip/ar_viewer_ios_app_clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = GZ5M47VRK6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ar-viewer-ios-app-clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AR Viewer";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs access to your camera for AR to work.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "cc.superposition.ar-viewer-ios.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +528,15 @@
 			buildConfigurations = (
 				25262B9D2E0D7838000C5822 /* Debug */,
 				25262B9E2E0D7838000C5822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25262BB32E0D7867000C5822 /* Build configuration list for PBXNativeTarget "ar-viewer-ios-app-clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25262BB42E0D7867000C5822 /* Debug */,
+				25262BB52E0D7867000C5822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
