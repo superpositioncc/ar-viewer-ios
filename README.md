@@ -1,11 +1,12 @@
 # AR Viewer for iOS
 
-<div style="text-align: center">
-	<img src="assets/1.gif" height="500">
-	<p>
-		<i>An easy way to create augmented reality experiences on iOS — the foundation under ARSynth</i>
-	</p>
-</div>
+<p align="center">
+	<img src="assets/1.gif" width="230" height="500"/>
+</p>
+
+<p align="center">
+	<em>An easy way to create augmented reality experiences on iOS — the foundation under ARSynth</em>
+</p>
 
 ## 🤷🏻‍♂️ Why?
 
@@ -22,6 +23,6 @@ You will need to associate a domain with your app and add it in XCode under `Sig
 
 To test the experience, register a Local Experience on your iOS. You can do this under Settings > Developer > Local Experiences. See the screenshot below for an example. Then, open `example/index.html` in your browser. It reveals a simple interface that allows you to set a number of objects to spawn and displays a QR code that launches the augmented reality viewer.
 
-<div style="text-align: center">
+<p align="center">
 	<img src="assets/2.png" height="500">
-</div>
+</p>
